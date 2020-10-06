@@ -57,8 +57,8 @@ zval,zbin,xval,xbin,xtran = create_grids()
 log_df=DataFrame()
 log_df.Odometer=kron(ones(zbin),xval) #20301
 log_df.RouteUsage =kron(ones(xbin),zval) #20301
-log_df.Branded=zeros(size(Odeo))
-log_df.time=zeros(size(Bran))
+log_df.Branded=zeros((size(log_df,1)))
+log_df.time=zeros(size(log_df,1))
 
 
 
